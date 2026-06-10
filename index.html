@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A polished frontend-only ecommerce demo with cart persistence, product browsing, and support pages."
+    />
+    <title>Northstar Goods | Frontend Ecommerce Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="home">
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <span class="brand-mark">N</span>
+          <span>
+            <strong>Northstar Goods</strong>
+            <small>Frontend ecommerce demo</small>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="./index.html" data-nav="home">Home</a>
+          <a href="./shop.html" data-nav="shop">Shop</a>
+          <a href="./about.html" data-nav="about">About</a>
+          <a href="./support.html" data-nav="support">Support</a>
+        </nav>
+        <a class="cart-link" href="./cart.html" data-nav="cart">
+          Cart
+          <span class="cart-badge" data-cart-badge>0</span>
+        </a>
+      </header>
+
+      <main>
+        <section class="hero section">
+          <div class="hero-copy">
+            <span class="eyebrow">Fresh picks. Fast checkout. Zero backend.</span>
+            <h1>Modern ecommerce, built entirely in the browser.</h1>
+            <p>
+              Browse a curated catalog, add products to your cart, and keep everything saved in local
+              storage. This demo is fully frontend-only and split across multiple pages for a realistic
+              retail experience.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="./shop.html">Shop the collection</a>
+              <a class="button button-secondary" href="./support.html">Visit support</a>
+            </div>
+            <dl class="hero-stats">
+              <div>
+                <dt>20+</dt>
+                <dd>browser-native interactions</dd>
+              </div>
+              <div>
+                <dt>5</dt>
+                <dd>fully linked pages</dd>
+              </div>
+              <div>
+                <dt>100%</dt>
+                <dd>frontend only</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="hero-panel">
+            <div class="hero-panel-card hero-panel-card-accent">
+              <span>Today’s feature</span>
+              <strong>Studio essentials</strong>
+              <p>Layered product cards, responsive grids, and polished cart management.</p>
+            </div>
+            <div class="hero-panel-card">
+              <span>Cart memory</span>
+              <strong>Saved locally</strong>
+              <p>Refresh the page and your selected items will still be there.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <span class="eyebrow">Featured collection</span>
+            <h2>Hand-picked products with a bold visual style.</h2>
+          </div>
+          <div class="product-grid product-grid-featured" data-featured-grid></div>
+        </section>
+
+        <section class="section split-section">
+          <div class="split-card">
+            <span class="eyebrow">Why it works</span>
+            <h2>Everything you expect from a small storefront, minus the backend.</h2>
+            <p>
+              Filters, cart updates, support requests, and purchase summaries are stored locally so you
+              can explore the flow without a server or database.
+            </p>
+          </div>
+          <div class="feature-stack">
+            <article class="mini-card">
+              <h3>Fast browsing</h3>
+              <p>Search, sort, and filter the catalog instantly on the shop page.</p>
+            </article>
+            <article class="mini-card">
+              <h3>Persistent cart</h3>
+              <p>Cart counts and line items remain in local storage across page reloads.</p>
+            </article>
+            <article class="mini-card">
+              <h3>Support logs</h3>
+              <p>Submitted support requests are saved locally and listed back to the user.</p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Northstar Goods is a demo storefront designed for frontend exploration.</p>
+        <p>Built with HTML, CSS, JavaScript, and localStorage.</p>
+      </footer>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>

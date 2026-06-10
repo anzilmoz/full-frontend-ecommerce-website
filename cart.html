@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Review the Northstar Goods cart, update quantities, and simulate a frontend-only checkout."
+    />
+    <title>Cart | Northstar Goods</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="cart">
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <span class="brand-mark">N</span>
+          <span>
+            <strong>Northstar Goods</strong>
+            <small>Frontend ecommerce demo</small>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="./index.html" data-nav="home">Home</a>
+          <a href="./shop.html" data-nav="shop">Shop</a>
+          <a href="./about.html" data-nav="about">About</a>
+          <a href="./support.html" data-nav="support">Support</a>
+        </nav>
+        <a class="cart-link" href="./cart.html" data-nav="cart">
+          Cart
+          <span class="cart-badge" data-cart-badge>0</span>
+        </a>
+      </header>
+
+      <main>
+        <section class="section">
+          <div class="section-heading">
+            <span class="eyebrow">Your cart</span>
+            <h1>Review items stored in local storage.</h1>
+            <p>
+              Adjust quantities, remove products, and simulate checkout without any backend services.
+            </p>
+          </div>
+
+          <div class="cart-layout">
+            <div class="cart-list-wrap">
+              <div class="cart-message" data-cart-message hidden></div>
+              <div class="cart-list" data-cart-items></div>
+            </div>
+
+            <aside class="cart-summary" data-cart-summary></aside>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Cart totals and saved items are powered by the browser only.</p>
+        <p>Checkout is simulated so you can test the flow locally.</p>
+      </footer>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>

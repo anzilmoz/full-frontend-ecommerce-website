@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn about the Northstar Goods demo storefront and the frontend-only approach behind it."
+    />
+    <title>About | Northstar Goods</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="about">
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <span class="brand-mark">N</span>
+          <span>
+            <strong>Northstar Goods</strong>
+            <small>Frontend ecommerce demo</small>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="./index.html" data-nav="home">Home</a>
+          <a href="./shop.html" data-nav="shop">Shop</a>
+          <a href="./about.html" data-nav="about">About</a>
+          <a href="./support.html" data-nav="support">Support</a>
+        </nav>
+        <a class="cart-link" href="./cart.html" data-nav="cart">
+          Cart
+          <span class="cart-badge" data-cart-badge>0</span>
+        </a>
+      </header>
+
+      <main>
+        <section class="section about-hero">
+          <div class="section-heading">
+            <span class="eyebrow">About the store</span>
+            <h1>Designed as a realistic ecommerce demo, not a template shell.</h1>
+            <p>
+              Northstar Goods is a concept storefront built to showcase a complete shopping journey
+              using only HTML, CSS, JavaScript, and localStorage.
+            </p>
+          </div>
+        </section>
+
+        <section class="section split-section">
+          <article class="split-card">
+            <span class="eyebrow">What it includes</span>
+            <h2>Pages, interactions, and content you can actually explore.</h2>
+            <p>
+              The layout includes a homepage, catalog, cart, about page, and support page. The cart,
+              quantity controls, and support submissions persist locally for a more complete demo.
+            </p>
+          </article>
+          <div class="feature-stack">
+            <article class="mini-card">
+              <h3>Visual language</h3>
+              <p>Warm gradients, expressive type, and layered cards give the site a distinct look.</p>
+            </article>
+            <article class="mini-card">
+              <h3>Browser state</h3>
+              <p>Selected products, cart counts, and submitted tickets live in the browser only.</p>
+            </article>
+            <article class="mini-card">
+              <h3>Frontend focus</h3>
+              <p>No backend, no database, and no external data source are required to use the site.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section timeline-section">
+          <div class="section-heading section-heading-inline">
+            <h2>Build philosophy</h2>
+            <p>Simple enough to understand, polished enough to feel real.</p>
+          </div>
+          <div class="timeline-grid">
+            <article class="timeline-card">
+              <span>01</span>
+              <h3>Clear structure</h3>
+              <p>Pages are split by intent so the experience feels like a true storefront.</p>
+            </article>
+            <article class="timeline-card">
+              <span>02</span>
+              <h3>Useful interactions</h3>
+              <p>Cart and support actions are functional, not just decorative.</p>
+            </article>
+            <article class="timeline-card">
+              <span>03</span>
+              <h3>Local persistence</h3>
+              <p>State survives refreshes, which makes the demo feel complete without a server.</p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Built as a frontend-only showcase for ecommerce UI patterns.</p>
+        <p>Use the shop page to start adding items to the cart.</p>
+      </footer>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
